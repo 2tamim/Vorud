@@ -12,8 +12,8 @@ class Employee(models.Model):
     pcode = models.CharField(max_length=10,blank=False,null=False, verbose_name=u'کد پرسنلی')
     # avatar = models.ImageField(upload_to='', blank=False,null=False, verbose_name=u'تصویر')
     employment_choice = (
-        (0,'رسمی'),
-        (1,'قراردادی'),
+        (0,'a'),
+        (1,'b'),
     )
     employment = models.IntegerField(choices=employment_choice, blank=False, null=False, verbose_name=u'نوع استخدام')
 
@@ -252,17 +252,17 @@ class Report(models.Model):
 
     all_guard = models.TextField(blank=False,null=False,verbose_name=u'تعداد و اسامی نگهبانان حاضر')
 
-    baton_delivery = models.BooleanField(default=False, blank=False, null=False, verbose_name=u'تحویل باتوم')
-    cap_delivery = models.BooleanField(default=False, blank=False, null=False, verbose_name=u'تحویل کلاه')
-    wireless_delivery = models.BooleanField(default=False, blank=False, null=False, verbose_name=u'تحویل بیسیم')
-    bracelet_delivery = models.BooleanField(default=False, blank=False, null=False, verbose_name=u'تحویل دستبند')
-    safe_delivery = models.BooleanField(default=False, blank=False, null=False, verbose_name=u'تحویل گاوصندوق')
-    torch_delivery = models.BooleanField(default=False, blank=False, null=False, verbose_name=u'تحویل چراغ قوه')
-    spray_delivery = models.BooleanField(default=False, blank=False, null=False, verbose_name=u'تحویل افشانه')
-    monitoring_delivery = models.BooleanField(default=False, blank=False, null=False, verbose_name=u'تحویل مانیتورینگ')
-    kolt_delivery = models.BooleanField(default=False, blank=False, null=False, verbose_name=u'تحویل سلاح کمری')
-    shoker_delivery = models.BooleanField(default=False, blank=False, null=False, verbose_name=u'تحویل شوکر')
-    simulator_delivery = models.BooleanField(default=False, blank=False, null=False, verbose_name=u'تحویل شبیه ساز')
+    baton_delivery = models.BooleanField(default=False, blank=False, null=False, verbose_name=u'q')
+    cap_delivery = models.BooleanField(default=False, blank=False, null=False, verbose_name=u'a')
+    wireless_delivery = models.BooleanField(default=False, blank=False, null=False, verbose_name=u'z')
+    bracelet_delivery = models.BooleanField(default=False, blank=False, null=False, verbose_name=u'w')
+    safe_delivery = models.BooleanField(default=False, blank=False, null=False, verbose_name=u's')
+    torch_delivery = models.BooleanField(default=False, blank=False, null=False, verbose_name=u'x')
+    spray_delivery = models.BooleanField(default=False, blank=False, null=False, verbose_name=u'e')
+    monitoring_delivery = models.BooleanField(default=False, blank=False, null=False, verbose_name=u'd')
+    kolt_delivery = models.BooleanField(default=False, blank=False, null=False, verbose_name=u'f')
+    shoker_delivery = models.BooleanField(default=False, blank=False, null=False, verbose_name=u'v')
+    simulator_delivery = models.BooleanField(default=False, blank=False, null=False, verbose_name=u'v')
     tempm_delivery = models.BooleanField(default=False, blank=False, null=False, verbose_name=u'تحویل تب سنج')
 
     phone_visit = models.BooleanField(default=False, blank=False, null=False, verbose_name=u'بازدید تلفن ها')
